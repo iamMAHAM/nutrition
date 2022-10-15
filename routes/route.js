@@ -38,7 +38,7 @@ router.post("/login_check", (req, res)=>{
   })
 })
 
-router.get("/conseils", (req, res)=>{
+router.get("/index", (req, res)=>{
   res.render("conseils")
 })
 

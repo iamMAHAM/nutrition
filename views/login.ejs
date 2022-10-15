@@ -41,7 +41,7 @@
                 })
                 .then(response=>{
                   alert(JSON.stringify(response))
-                  if (vs?.status){
+                  if (response?.status){
                     window.location.href = "/index"
                   }
                 })
