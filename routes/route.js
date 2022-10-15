@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const {signIn, signUp} = require("../lib/functions")
+const {signIn, signUp, find} = require("../lib/functions")
 
 
 router.get("/", (req, res)=>{
@@ -39,7 +39,10 @@ router.post("/login_check", (req, res)=>{
 })
 
 router.get("/index", (req, res)=>{
-  res.render("conseils")
+  find("conseils")
+  .then(datas=>{
+    res.render("conseils", {conseils: datas})
+  })
 })
 
 router.post("/message/:senderId/:receiverId", (req, res)=>{
