@@ -10,7 +10,7 @@ app.set("view engine", "ejs")
 app.use("/", routes)
 
 
-app.listen(3000, (err)=>{
+app.listen(process.env.PORT || 5000, (err)=>{
   console.log("server demmaré sur le port 3000")
   console.log(err)
 })
