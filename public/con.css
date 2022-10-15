@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(187, 139, 232) ;
+}
+.inscrire{
+    margin-top: 100px;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-blend-mode: darken;
+
+
+   
+}
+form{
+    border: 2px solid #3DA3D4;
+    background-color:white;
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formes input{
+    margin-top: 30px;
+    width: 429px;
+    padding: 20px; 
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    margin-left: 20px;
+} 
+.btn {
+    margin-top: 30px;
+    width: 429px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: rgb(187, 139, 232);
+    margin-left: 20px;
+}
+.btn button{
+    background: none;
+    font-size: 34px;
+    font-weight: bold;
+    border: none;
+}
+ .btn button:hover{
+    color: #3DA3D4;
+ }
+.btn:hover{
+    
+    background-color:white;
+    font-weight: bold;
+    border: 2px solid #3DA3D4;
+}
+.erreur{
+    color: red;
+    font-weight: bold;
+}
+p a{
+    text-decoration: none;
+    color: #3DA3D4;
+}

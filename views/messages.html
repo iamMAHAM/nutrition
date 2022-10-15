@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chat</title>
+  <link rel="stylesheet" href="../public/style.css">
+  <link rel="stylesheet" href="../public/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="boody">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-items"><a href="/"><i class="fa-solid fa-terminal"></i></a></li>
+        <li class="nav-items"><a href="/">Accueil</a></li>
+        <li class="nav-items"><a href="/">Conseils</a></li>
+        <li class="nav-items"><a href="/">Inscription</a></li>
+        <li class="nav-items"><button class="nav-btn">Connexion</button></li>
+      </ul>
+    </nav>
+  </div>
+  <header>
+  </header>
+  <div class="messages">
+    <div class="container">
+      <div class="chat_box">
+        <div class="head">
+          <div class="user">
+            <div class="avatar">
+              <img src="https://picsum.photos/g/40/40" />
+            </div>
+            <div class="name">Moi</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="incoming">
+            <div class="bubble">
+              <p>Hey, Father's Day is coming up..</p>
+            </div>
+            <div class="bubble">
+              <p>What are you getting.. Oh, oops sorry dude.</p>
+            </div>
+          </div>
+          <div class="outgoing">
+            <div class="bubble lower">
+              <p>Nah, it's cool.</p>
+            </div>
+            <div class="bubble">
+              <p>Well you should get your Dad a cologne. Here smell it. Oh wait! ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <input type="text" class="msg" placeholder="Type a message..." />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

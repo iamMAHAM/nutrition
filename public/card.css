@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenaire{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 30px auto;
+}
+.sous_cont1{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    border: outset rgb(94, 85, 85);
+    border-radius: 10px;
+    
+}
+.content1,.content2{
+    position: relative;
+    width: 250px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#picture1{
+    width: 50%;
+    height: 20%;
+}
+h3{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.span1{
+    font-size: xx-large;
+}
+.content22{
+    margin-top: 70px;
+}
+.span2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    word-wrap: break-word;
+}
+
+.maison{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.emplois{
+    display: flex
+}
+
+.emplois p {
+    padding: 5px;
+    margin: 5px;
+    background-color: beige;
+}

@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(187, 139, 232) ;
+}
+.inscrire{
+      
+    margin-top: 60px;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-blend-mode: darken;
+
+}
+form{
+    border: 2px solid #3DA3D4;
+    background-color:white;
+    margin: 100px auto;
+    width: 700px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+p{
+    margin-bottom: 20px;
+}
+.forme{
+    width: 100%;
+    display: flex;
+}
+.forme1 input{
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: none; 
+    display: flex;
+   
+
+}
+.forme2 input{
+    margin-top: 30px;
+    width: 300px;
+  margin-right: 5px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: none;
+    display: flex; 
+   
+
+}
+.formes input{
+    margin-top: 20px;
+    width: 629px;
+    padding: 20px; 
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    margin-left: 20px;
+    border: none; 
+    display: flex;
+} 
+
+.btn {
+    /* margin-top: 30px; */
+    width: 80%;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: #3DA3D4;
+    margin: 50px;
+  
+}
+.btn button{
+    background: none;
+    font-size: 34px;
+    font-weight: bold;
+    border: none;
+}
+ .btn button:hover{
+    color: #3DA3D4;
+ }
+.btn:hover{
+    background-color: white;
+    color: #3DA3D4;
+    border: 2px solid #3DA3D4;
+}

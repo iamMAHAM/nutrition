@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="in.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="inscrire">
+        
+        <form action="/signup" method="POST" >
+            <h2>Inscrire Toi</h2>
+            <span class="error"></span>
+            <div class="formes">
+               <div class="forme1">
+                    <input name="fullName" type="text" placeholder="Nom complet" class="inp" >
+               </div>
+            </div>
+             <div class="formes">
+                <input type="email" name="email" placeholder="Entrer l'Email" class="inp">
+ 
+               
+            </div>
+             <div class="formes">
+                <input type="password" name="password" placeholder="Entrer le mot de passe" class="inp">
+            </div>
+             <div class="btn">
+                 <button>Inscrire</button>
+              
+            </div>
+
+        </form>
+        <script>
+            document.querySelector("form").addEventListener("submit", (e)=>{
+                e.preventDefault()
+                const data = {}
+                Array.from(document.querySelectorAll(".inp")).map(el=>{
+                    data[el.name] = el.value
+                })
+                console.log("form", data)
+                fetch("/signup", {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {"content-type": "application/json"}
+                })
+                .then(data=>data.json())
+                .then(vs => {
+                  alert(JSON.stringify(vs))
+                  if (vs?.status){
+                    window.location.href = "/login"
+                  }
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>

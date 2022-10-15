@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="con.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="inscrire">
+        <form action="">
+            <h2>Connexion</h2>
+             <!-- <p>Veuillez créer un <router-link to="/inscription">compte SVP</router-link></p>  -->
+             <p>Veuillez créer un <a href="/signup"> compte</a></p>
+             <span class="erreur"></span>
+           
+             <div class="formes">
+                <input type="email" placeholder="entrer l'Email" name="email"  class="lol">
+            </div>
+             <div class="formes">
+                <input type="password" placeholder="entrer le mot de passe" name="password" class="lol">
+            </div>
+             <div class="btn">
+                <button >Connection</button>
+            </div>
+
+        </form>
+        <script>
+            document.querySelector("form").addEventListener("submit", (e)=>{
+                e.preventDefault()
+                const data = {}
+                Array.from(document.querySelectorAll(".lol")).forEach(el=>data[el.name] = el.value)
+                console.log(data)
+                fetch("/login_check", {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {"content-type": "application/json"}
+                }).then(res=>{
+                    return res.json()
+                })
+                .then(response=> {
+                  alert(response)
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>

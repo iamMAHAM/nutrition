@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <title>Jobs</title>
+</head>
+<body>
+    <div class="contenaire">
+        <% conseils.forEach(job => { %>
+            <div class="sous_cont1" id=<%= job.id %> >
+                <div class="content1">
+                  <img src=<%= job.image %>  id="picture1">
+                </div>
+                <div class="content2">
+                    <h3><span class="span2"><%= job.title[0] %></span><%= job.title.slice(1, job.title.length) %></h3>
+                    <div class="content22">
+                        <div class="location">
+                            <p><img src="logo/icons8-region-25.png" alt=""><%= job.ville %></p>
+                            <div class="emplois">
+                                <% job.prerequis.forEach(e => { %>
+                                    <p class="maison"><%= e %> </p>
+                                <% }) %>
+                            </div>
+                            <p>Description <br>
+                                <span class="span2">Lorem ipsum dolor sit amet consectetur, adipisicing elit</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
